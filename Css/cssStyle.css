@@ -1,0 +1,570 @@
+:root {
+  --main-color:#0078FF;
+  --white-color:white;
+  --bold-color:#1E1E1E;
+  --icon-border:#cde1f8;
+}
+
+.title { 
+  text-transform: uppercase;
+}
+
+.clr {
+  clear: both;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F9FA;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.navbar .navbar-toggler {
+  color:var(--white-color);
+  font-size: 25px;
+  border-color: var(--white-color);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-link {
+  color:var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+  color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand:hover {
+  color: var(--main-color);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color:var(--main-color);
+}
+
+
+.navbar .nav-item a {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.landing {
+  height: 100vh;
+  background: fixed url(../images/intro-bg.jpg) center ;
+  background-size: cover;
+}
+
+.landing .opacity {
+  background-color:rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+
+.landing h1 {
+  /* font-size: 4.5rem; */
+  font-size:calc(2.5rem + 3vw);
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.landing p {
+  font-size: 44px;
+}
+
+.landing p::after{
+  content:"Frontend Developer|";
+  font-size: 44px;
+  animation: alternate 12s typing infinite ease-in-out;
+}
+@keyframes typing {
+  0% { content: " Frontend Developer|";}
+  1% { content: " Frontend Develope|";}
+  2% { content: " Frontend Develop|";}
+  3% { content: " Frontend Develo|";}
+  4% { content: " Frontend Devel|";}
+  5% { content: " Frontend Deve|";}
+  6% { content: " Frontend Dev|";}
+  7% { content: " Frontend De|";}
+  8% { content: " Frontend D|";}
+  9% { content: " Frontend |";}
+  10% { content: " Frontend|";}
+  11% { content: " Fronten|";}
+  12% { content: " Fronte|";}
+  13% { content: " Front|";}
+  14% { content: " Fron|";}
+  15% { content: " Fro|";}
+  16% { content: " Fr|";}
+  17% { content: " F|";}
+  18% { content: " |";}
+  19% { content: " G|";}
+  20% { content: " Gr|";}
+  21% { content: " Gra|";}
+  22% { content: " Grap|";}
+  23% { content: " Graph|";}
+  24% { content: " Graphi|";}
+  25% { content: " Graphic|";}
+  26% { content: " Graphic |";}
+  27% { content: " Graphic D|";}
+  28% { content: " Graphic De|";}
+  29% { content: " Graphic Des|";}
+  30% { content: " Graphic Desi|";}
+  31% { content: " Graphic Desig|";}
+  32% { content: " Graphic Design|";}
+  33% { content: " Graphic Designe|";}
+  34% { content: " Graphic Designer|";}
+  35% { content: " Graphic Designe|";}
+  36% { content: " Graphic Design|";}
+  37% { content: " Graphic Desig|";}
+  38% { content: " Graphic Desi|";}
+  39% { content: " Graphic Des|";}
+  40% { content: " Graphic De|";}
+  41% { content: " Graphic D|";}
+  42% { content: " Graphic |";}
+  43% { content: " Graphic|";}
+  44% { content: " Graphi|";}
+  45% { content: " Graph|";}
+  46% { content: " Grap|";}
+  47% { content: " Gra|";}
+  48% { content: " Gr|";}
+  49% { content: " G|";}
+  50% { content: " |";}
+  51% { content: " C|";}
+  52% { content: " CE|";}
+  53% { content: " CEO|";}
+  54% { content: " CEO |";}
+  55% { content: " CEO D|";}
+  56% { content: " CEO De|";}
+  57% { content: " CEO Dev|";}
+  58% { content: " CEO DevF|";}
+  59% { content: " CEO DevFo|";}
+  60% { content: " CEO DevFol|";}
+  61% { content: " CEO DevFoli|";}
+  62% { content: " CEO DevFolio|";}
+  63% { content: " CEO DevFoli|";}
+  64% { content: " CEO DevFol|";}
+  65% { content: " CEO DevFo|";}
+  66% { content: " CEO DevF|";}
+  67% { content: " CEO Dev|";}
+  68% { content: " CEO De|";}
+  69% { content: " CEO D|";}
+  70% { content: " CEO |";}
+  71% { content: " CEO|";}
+  72% { content: " CE|";}
+  73% { content: " C|";}
+  74% { content: " |";}
+  75% { content: " W|";}
+  76% { content: " We|";}
+  77% { content: " Web|";}
+  78% { content: " Web |";}
+  79% { content: " Web D|";}
+  80% { content: " Web De|";}
+  81% { content: " Web Dev|";}
+  82% { content: " Web Deve|";}
+  83% { content: " Web Devel|";}
+  84% { content: " Web Develo|";}
+  85% { content: " Web Develop|";}
+  86% { content: " Web Develope|";}
+  87% { content: " Web Developer|";}
+  88% { content: " Web Develope|";}
+  89% { content: " Web Develop|";}
+  90% { content: " Web Develo|";}
+  91% { content: " Web Devel|";}
+  92% { content: " Web Deve|";}
+  93% { content: " Web Dev|";}
+  94% { content: " Web De|";}
+  95% { content: " Web D|";}
+  96% { content: " Web |";}
+  97% { content: " Web|";}
+  98% { content: " We|";}
+  99% { content: " W|";}
+  100% { content: " |";}
+}
+
+
+.about,
+.Service {
+  padding: 64px 0;
+}
+
+
+.about .about-info .span-title {
+  font-weight: 600;
+  color:#1E1E1E;
+  font-size: 1.1rem;
+}
+
+.about-me .about-title h3::after {
+  content: "";
+  position: absolute;
+  width: 105px;
+  display: block;
+  height: 3px;
+  background-color: var(--main-color);
+  bottom: -15px;
+}
+
+.about .about-info {
+  font-weight: 100;
+}
+
+
+
+.service .header h2 ,
+.portfolio .header h2,
+.blog .header h2{
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.service  .header p::after ,
+.portfolio .header p::after,
+.blog .header p::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: var(--main-color);
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.service .mainService{
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+}
+
+.service .icon-con {
+  width: 130px;
+  height: 130px;
+  border:10px solid var(--main-color);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+.service .icon-con svg {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.5s ease;
+}
+
+.service .icon-con .special {
+left: 45%;
+} 
+
+.service .mainService:hover .icon-con {
+  border-color: var(--icon-border);
+  background-color: var(--main-color);
+}
+
+.service .mainService:hover svg {
+  color: var(--white-color);
+} 
+
+
+.info {
+  background: fixed url(../images/counters-bg.jpg) center no-repeat;
+  background-image: cover;
+  padding: 8rem 0;
+  z-index: 1;
+}
+
+
+.info .groundInfo,
+.testimonials .groundInfo,
+.contact .groundInfo {
+  background-color:var(--main-color);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.info .info-icon {
+  width: 100px;
+  height: 100px;
+  border:10px solid var(--icon-border);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+.info .info-icon svg {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.5s ease;
+}
+
+
+.portCon{
+  cursor: pointer;
+}
+
+.portfolio .portCon .portImg {
+  overflow: hidden;
+}
+
+.portfolio .portCon img{
+  transition: transform 1s ;
+}
+
+.portfolio .portCon:hover img {
+  transform:scale(1.3);
+}
+
+.subBtu {
+  width: 40px;
+  height: 40px;
+  border:4px solid var(--main-color);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  top: -10px;
+}
+
+.subBtu svg {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.testimonials {
+  background: fixed url(../images/overlay-bg.jpg) center no-repeat;
+  background-image: cover;
+  padding: 6rem 0;
+  z-index: 1;
+}
+
+.carousel-item img {
+  width: 200px;
+}
+
+.testimonials .imgTest {
+  width: 60px;
+  height: 60px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonials .imgTest .testIcon {
+  position: absolute;
+  font-size: 40px;
+  color: var(--main-color);
+  text-align: center;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.blog .blogcon .blogImg {
+  overflow: hidden;
+}
+
+.blog .blogcon .img{
+  transition: transform 0.5s;
+}
+
+.blog .blogcon:hover .img{
+  transform: scale(1.3);
+}
+
+.blog .blogInfo .headerBlog {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  top: -42px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.textheader {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: auto;
+  color: var(--white-color);
+  font-size: 0.8rem;
+}
+
+.blog .blogFooter .blogInfoFooter .imgfooter {
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  overflow: hidden;
+}
+
+
+.blogFooter .blogInfoFooter .name {
+  color: black;
+  transition: color 0.5s ease-in-out;
+}
+
+.blogFooter .blogInfoFooter .name:hover {
+  color:var(--main-color)
+}
+
+.contact {
+  background: fixed url(../images/overlay-bg.jpg) center no-repeat;
+  background-image: cover;
+  padding: 6rem 0;
+  z-index: 1;
+}
+
+.contact .mainContact .dash{
+  width: 120px;
+  height: 5px;
+  background-color: #0078FF;
+}
+
+.contact form input {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 1.2rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: var(--white-color);
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.contact form textarea {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: var(--white-color);
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  height: auto;
+}
+
+.contact form button {
+  padding: 0.9rem 2.3rem;
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-color: #cde1f8;
+  transition: all 500ms ease;
+}
+
+.contact form button:hover {
+  background-color: #0062d3;
+  color: var(--white-color);
+  transition: all 500ms ease;
+}
+
+.contact .mainContact ul li span svg {
+  color: var(--main-color);
+}
+
+
+.contact .icon-con {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border: 4px solid var(--main-color);
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.contact .icon-con svg {
+  position: absolute;
+  color:#1E1E1E;
+  font-size: 25px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.5s ease;
+}
+
+
+.contact .icon-con:hover {
+  border-color: var(--icon-border);
+  background-color: var(--main-color);
+}
+
+.contact .icon-con:hover svg {
+  color:var(--white-color);
+} 
+
+.footer .footerCon a {
+  color: var(--white-color);
+  transition: color 0.5s;
+}
+
+.footer .footerCon a:hover {
+  color:black
+}
+
+.footer .scroll {
+  position: fixed;
+  background: var(--main-color);
+  color: var(--white-color);
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  right: 30px;
+  bottom: 33px;
+}
+
+.footer .scroll svg {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  font-size: 22px;
+  transform: translate(-50%,-50%);
+}
+
+.footer .fixedBtn {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  color: var(--white-color);
+  background: var(--main-color);
+  font-size: 20px;
+  right: 0;
+  top:325px;
+  border: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
